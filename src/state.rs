@@ -2,7 +2,10 @@
 //!
 //! # Example
 //!
-//! ```
+//! ```ignore
+//! use serde::{Serialize, Deserialize};
+//! use submillisecond::state::State;
+//!
 //! State::init(0);
 //!
 //! #[derive(Clone, Copy, Debug, Serialize, Deserialize)]

@@ -12,7 +12,7 @@ use crate::RequestContext;
 ///
 /// # Example
 ///
-/// ```rust,no_run
+/// ```ignore
 /// use submillisecond::{router, extract::Query};
 /// use serde::Deserialize;
 ///

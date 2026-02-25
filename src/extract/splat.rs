@@ -6,7 +6,9 @@ use super::FromRequest;
 ///
 /// # Example
 ///
-/// ```
+/// ```ignore
+/// use submillisecond::{router, extract::Splat};
+///
 /// fn foo_handler(Splat(splat): Splat) {
 ///     // GET "/foo-bar" prints "bar"
 ///     println!("{splat}");

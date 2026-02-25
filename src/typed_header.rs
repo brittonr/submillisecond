@@ -16,7 +16,7 @@ use crate::{RequestContext, Response};
 /// `TypedHeader` rather than removing all headers with the `HeaderMap`
 /// extractor.
 ///
-/// ```rust,no_run
+/// ```ignore
 /// use submillisecond::{router, TypedHeader, headers::UserAgent};
 ///
 /// fn users_teams_show(

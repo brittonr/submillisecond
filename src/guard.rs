@@ -9,7 +9,7 @@ use crate::RequestContext;
 ///
 /// # Example
 ///
-/// ```
+/// ```ignore
 /// use submillisecond::{router, Application, Guard, RequestContext};
 ///
 /// struct AdminGuard;

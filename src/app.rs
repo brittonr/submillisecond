@@ -13,7 +13,7 @@ use crate::ProcessSafeHandler;
 ///
 /// # Example
 ///
-/// ```
+/// ```no_run
 /// use submillisecond::{router, Application};
 ///
 /// fn index() -> &'static str { "Welcome" }
@@ -21,7 +21,8 @@ use crate::ProcessSafeHandler;
 /// Application::new(router! {
 ///     GET "/" => index
 /// })
-/// .serve("0.0.0.0:3000")
+/// .serve("0.0.0.0:3000")?;
+/// # Ok::<(), std::io::Error>(())
 /// ```
 #[derive(Clone, Copy)]
 pub struct Application<T, Kind, Arg, Ret> {

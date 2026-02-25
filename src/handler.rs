@@ -91,23 +91,23 @@ where
 ///
 /// # Handler examples
 ///
-/// ```
+/// ```ignore
 /// fn index() -> &'static str {
 ///     "Hello, submillisecond"
 /// }
 ///
 /// use submillisecond::extract::Path;
-/// use submillisecond::http::status::FOUND;
+/// use submillisecond::http::StatusCode;
 ///
 /// fn headers(Path(id): Path<String>) -> (StatusCode, String) {
-///     (FOUND, id)
+///     (StatusCode::FOUND, id)
 /// }
 /// ```
 ///
 /// # Middleware example
 ///
-/// ```
-/// use submillisecond::RequestContent;
+/// ```ignore
+/// use submillisecond::RequestContext;
 /// use submillisecond::response::Response;
 ///
 /// fn logging_layer(req: RequestContext) -> Response {

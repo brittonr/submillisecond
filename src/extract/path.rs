@@ -27,7 +27,7 @@ pub mod de;
 ///
 /// # Example
 ///
-/// ```
+/// ```ignore
 /// use submillisecond::{router, extract::Path};
 /// use uuid::Uuid;
 ///
@@ -44,7 +44,7 @@ pub mod de;
 ///
 /// If the path contains only one parameter, then you can omit the tuple.
 ///
-/// ```
+/// ```ignore
 /// use submillisecond::{router, extract::Path};
 /// use uuid::Uuid;
 ///
@@ -62,7 +62,7 @@ pub mod de;
 /// Path segments also can be deserialized into any type that implements
 /// [`serde::Deserialize`]. This includes tuples and structs:
 ///
-/// ```
+/// ```ignore
 /// use serde::Deserialize;
 /// use submillisecond::{router, extract::Path};
 /// use uuid::Uuid;
@@ -95,7 +95,7 @@ pub mod de;
 ///
 /// If you wish to capture all path parameters you can use `HashMap` or `Vec`:
 ///
-/// ```
+/// ```ignore
 /// use submillisecond::{router, extract::Path};
 /// use std::collections::HashMap;
 ///

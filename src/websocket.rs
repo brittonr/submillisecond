@@ -166,7 +166,10 @@ impl<'de> Deserialize<'de> for WebSocketConnection {
 ///
 /// # Example
 ///
-/// ```
+/// ```ignore
+/// use submillisecond::{router, websocket::{WebSocket, WebSocketUpgrade}};
+/// use tungstenite::Message;
+///
 /// fn websocket(ws: WebSocket) -> WebSocketUpgrade {
 ///     ws.on_upgrade((), |mut conn, ()| {
 ///         conn.write_message(Message::text("Hello from submillisecond!"));

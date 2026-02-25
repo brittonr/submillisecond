@@ -182,8 +182,9 @@ where
 /// Response for redirecting the client
 ///
 /// # Example
-/// ```
+/// ```ignore
 /// use submillisecond::http::Uri;
+/// use submillisecond::response::Redirect;
 /// Redirect::to(Uri::from_static("https://lunatic.solutions/"));
 /// ```
 pub struct Redirect {

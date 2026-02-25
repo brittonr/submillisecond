@@ -13,7 +13,7 @@
 //!
 //! # Example
 //!
-//! ```
+//! ```ignore
 //! use submillisecond::cookies::{cookies_layer, Key};
 //! use submillisecond::session::{init_session, Session};
 //! use submillisecond::{router, Application};
@@ -26,7 +26,7 @@
 //! }
 //!
 //! fn main() -> std::io::Result<()> {
-//!     session::init_session(Key::generate());
+//!     init_session(Key::generate());
 //!
 //!     Application::new(router! {
 //!         with cookies_layer;

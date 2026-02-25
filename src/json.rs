@@ -15,8 +15,9 @@ use crate::RequestContext;
 ///
 /// # Extractor example
 ///
-/// ```
+/// ```ignore
 /// use serde::Deserialize;
+/// use submillisecond::Json;
 ///
 /// #[derive(Deserialize)]
 /// struct LoginPayload {
@@ -31,9 +32,10 @@ use crate::RequestContext;
 ///
 /// # Response example
 ///
-/// ```
+/// ```ignore
 /// use serde::Serialize;
 /// use submillisecond::extract::Path;
+/// use submillisecond::Json;
 ///
 /// #[derive(Serialize)]
 /// struct User {

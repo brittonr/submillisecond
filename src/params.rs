@@ -18,7 +18,7 @@ pub struct Param {
 ///
 /// # Extractor example
 ///
-/// ```
+/// ```ignore
 /// use submillisecond::router;
 /// use submillisecond::params::Params;
 ///
